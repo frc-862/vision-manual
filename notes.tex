@@ -20,9 +20,13 @@
 \section{General Concepts}
 Before we go into commands specific to OpenCV; we should first understand a little about how image processing works.
 \subsection*{HSV Values}
-HSV Values are a set of values that represent colors; think RGB values, but instead of Red, Green, and Blue representing the color, it is Hue, Saturation, and Value. But just what do those values mean? Well, let's take a look.
+HSV Values are a set of values that represent colors; think RGB values, but instead of Red, Green, and Blue representing the color, it is Hue, Saturation, and Value. But just what do those values mean? Well, let's take a look. Open up somethiing such as a color picker for these values too, while you're at it to play around with things.
 \subsubsection*{Hue}
 Hue represents the color portion of an HSV model. These values extend from 0 to 360.
+\subsubsection*{Saturation}
+Saturation represents the amount of gray in a given color. This can also be known as Chroma, as we see in the figure below.
+\subsubsection*{Value}
+Value (sometimes also referred to as light) is the brightness of the color. This can range from 0 to 100.
 
 % Format to make fit on same page?
 \includegraphics[width=\textwidth]{HSVcolormodel}
@@ -39,5 +43,7 @@ Here we will take a look at two important operators for slimming down noise in a
 Eroding an image will get rid of pixels that are lighter in value by averaging out a certain are (kernel) of pixels.
 \subsubsection*{Dilation}
 Dilating an image does something fairly similar to eroding one, but instead it will get rid of pixels darker in value.
+
+% Computing time as a function/frame rate is up next. (Hopefully)
 
 \end{document}
